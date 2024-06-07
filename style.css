@@ -1,0 +1,81 @@
+@import "css/fontNcolors.css";
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--clr-light-gray);
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-background{
+    width: 320px;
+    height: 497px;
+    background-color: var(--clr-white);
+
+    border-radius: 20px;
+}
+
+.qr-img-block{
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.qr-img-block img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    box-sizing: border-box;
+    padding: 8px 16px 0 16px;
+}
+
+.bold-text h2{
+    font-family: var(--ff-default), serif;
+    text-align: center;
+
+    margin: 0;
+    padding: 0 4px 0 4px;
+
+    color: var(--clr-dark-blue);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.default-text{
+    font-family: var(--ff-default), serif;
+    font-weight: 400;
+    text-align: center;
+
+    color: var(--clr-grayish-blue);
+}
+
+@media (max-width: 375px) {
+    .qr-img-block img{
+        box-shadow: none;
+    }
+
+    .bold-text h2{
+        text-shadow: none;
+    }
+}
